@@ -1,9 +1,5 @@
 streamlit
 nltk
 scikit-learn
-sklearn
-
-pandas 
+pandas
 numpy
-matplotlib
-seaborn
