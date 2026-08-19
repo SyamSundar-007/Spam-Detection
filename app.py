@@ -37,7 +37,7 @@ st.write("You Think it's a spam 🫤 let's find out.")
 message = st.text_input(
     label="Please put your here to check the spam: ",
     placeholder="Type something detailed...",
-    height=100 # Optional: height of the text box in pixels
+    # height=100 # Optional: height of the text box in pixels
 )
 
 import streamlit as st
