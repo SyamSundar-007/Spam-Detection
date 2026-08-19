@@ -1,9 +1,14 @@
 import pickle as pkl
 import streamlit as st
+import nltk
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
 import re
+
+nltk.download('stopwords')
+nltk.download('punkt_tab')
+nltk.download('wordnet')
 
 model = pkl.load(open('model.pkl', 'rb') )
 tfidf_vector = pkl.load( open('tfidf.pkl', 'rb'))
