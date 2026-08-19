@@ -76,7 +76,8 @@ if st.button("🚀 Detect Spam"):
         prediction = predict_spam(message)
         if prediction == 1:
             output =  "a Spam"
+            st.error(f'Our Prediction: This is {output} Message')
         else:
             output = "Not a Spam"
-        st.success(f'Our Prediction: This is {output} Message' )
+            st.success(f'Our Prediction: This is {output} Message' )
 
